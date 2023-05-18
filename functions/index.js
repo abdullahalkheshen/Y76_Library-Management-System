@@ -1,0 +1,38 @@
+/**
+ * Import function triggers from their respective submodules:
+ *
+ * const {onCall} = require("firebase-functions/v2/https");
+ * const {onDocumentWritten} = require("firebase-functions/v2/firestore");
+ *
+ * See a full list of supported triggers at https://firebase.google.com/docs/functions
+ */
+
+// eslint-disable-next-line no-unused-vars
+const {onRequest} = require("firebase-functions/v2/https");
+// eslint-disable-next-line no-unused-vars
+const logger = require("firebase-functions/logger");
+
+// Create and deploy your first functions
+// https://firebase.google.com/docs/functions/get-started
+
+// exports.helloWorld = onRequest((request, response) => {
+//   logger.info("Hello logs!", {structuredData: true});
+//   response.send("Hello from Firebase!");
+// });
+
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
+admin.initializeApp();
+
+exports.publishBook = functions.firestore
+    .document("books/{status}")
+    .onCreate((snap, context) => {
+      const newValue = snap.data();
+      const status = newValue.status;
+
+      if (status === "drafted") {
+        return snap.ref.set({status: "published"}, {merge: true});
+      } else {
+        return null;
+      }
+    });

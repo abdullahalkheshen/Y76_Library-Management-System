@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+.author-card-content {
+  height: 300px; /* Adjust as needed */
+  overflow: auto;
+}
+
+body {
+  line-height: 2rem;
+  height: 100vh;
+  background-color: #f7f5f1;
+  
+}
+
+.content {
+  padding: 15px;
+  background-color: #ccff33;
+}
+
+.btn {
+  border-radius: 35px;
+  background-color: #ffc41a;
+  color: #ffffff;
+}
+
+/* Styling for Buttons Wrapper */
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Adjust as per requirement */
+}
+
+.buttons-wrapper .btn {
+  margin: 50px; /* adjust as needed */
+  flex: 1 0 auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+.actions h4 {
+  margin: 0;
+  color: #040f0f;
+}
+
+.spinner {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #040f0f;
+}
+
+.search-wrapper {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* If you want to center the items */
+}
+
+.book-author-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+}
+
+
+
+
+.dob-text{ 
+  font-weight: bold;
+}
+
+.bio-text{
+  font-family: serif;
+}
+
+
+
+.left-panel {
+  background-color: #FFE45E;
+  position: sticky;
+  top: 0;  /* Set this to 0 to stick to the top of the viewport */
+  height: 100vh;  /* Set the height to the full viewport height */
+  min-height: 100vh;  /* Set the minimum height to the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.right-panel {
+  border-left: 1px solid black;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+input.search-bar {
+  padding: 10px !important;
+  border-radius: 30px !important;
+
+  border: 1px solid #040f0f !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.search-field label {
+  transition: none !important;
+  position: absolute; /* This will position the label relative to .search-field */
+  top: 10px; /* This will move the label above the input field */
+  left: 10px; /* Add a little space on the left side of the label */
+
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  color: firebrick;
+
+  font-family: "Times New Roman", Times, serif;
+}
+
+.search-field input:focus + label {
+  visibility: hidden;
+}
+
+.search-field {
+  position: relative;
+  margin: 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #040f0f;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.button-row .btn {
+  border-radius: 30px;
+  flex: 1 0 auto;
+  margin: 20px 0px; /* Moved margin styling here */
+  min-width: 100px; /* Adjust as per your requirement */
+}
+
+
+@media (max-width: 600px) {
+  .button-row .btn {
+    flex: 1 0 100%; /* Button takes full width */
+    font-size: 14px; /* Adjust font size */
+  }
+}

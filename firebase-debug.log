@@ -1,0 +1,101 @@
+[debug] [2023-05-17T01:44:44.550Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T01:44:44.553Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AbdullahAl-Kheshen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-05-17T01:44:44.553Z] CLI Version:   12.0.0
+[debug] [2023-05-17T01:44:44.554Z] Platform:      win32
+[debug] [2023-05-17T01:44:44.555Z] Node Version:  v18.16.0
+[debug] [2023-05-17T01:44:44.557Z] Time:          Wed May 17 2023 04:44:44 GMT+0300 (Eastern European Summer Time)
+[debug] [2023-05-17T01:44:44.557Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-17T01:44:44.675Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-17T01:44:44.676Z] > authorizing via signed-in user (abdullah.alkheshen@gmail.com)
+[debug] [2023-05-17T01:44:44.676Z] [iam] checking project y76-librarymanagementsystem for permissions ["firebase.projects.get"]
+[debug] [2023-05-17T01:44:44.677Z] > refreshing access token with scopes: []
+[debug] [2023-05-17T01:44:44.678Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-17T01:44:44.678Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T01:44:46.382Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-17T01:44:46.382Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-17T01:44:46.390Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions [none]
+[debug] [2023-05-17T01:44:46.390Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions x-goog-quota-user=projects/y76-librarymanagementsystem
+[debug] [2023-05-17T01:44:46.390Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-17T01:44:47.850Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions 200
+[debug] [2023-05-17T01:44:47.850Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-17T01:44:47.852Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem [none]
+[debug] [2023-05-17T01:44:48.726Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem 200
+[debug] [2023-05-17T01:44:48.726Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem {"projectId":"y76-librarymanagementsystem","projectNumber":"51556035661","displayName":"y76-LibraryManagementSystem","name":"projects/y76-librarymanagementsystem","resources":{"hostingSite":"y76-librarymanagementsystem","storageBucket":"y76-librarymanagementsystem.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_ddc4c19f-2f84-49cb-8200-666c7881b91e"}
+[info] 
+[info] === Serving from 'C:\Users\AbdullahAl-Kheshen\Desktop\abdullah\y76\Y76_Library-Management-System'...
+[info] 
+[debug] [2023-05-17T01:44:48.743Z] defaultcredentials: writing to file C:\Users\AbdullahAl-Kheshen\AppData\Roaming\firebase\abdullah_alkheshen_gmail.com_application_default_credentials.json
+[debug] [2023-05-17T01:44:48.748Z] Setting GAC to C:\Users\AbdullahAl-Kheshen\AppData\Roaming\firebase\abdullah_alkheshen_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\AbdullahAl-Kheshen\\AppData\\Roaming\\firebase\\abdullah_alkheshen_gmail.com_application_default_credentials.json"}}
+[debug] [2023-05-17T01:44:48.749Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem/adminSdkConfig [none]
+[debug] [2023-05-17T01:44:49.408Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem/adminSdkConfig 200
+[debug] [2023-05-17T01:44:49.408Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem/adminSdkConfig {"projectId":"y76-librarymanagementsystem","storageBucket":"y76-librarymanagementsystem.appspot.com","locationId":"us-central"}
+[info] i  functions: Watching "C:\Users\AbdullahAl-Kheshen\Desktop\abdullah\y76\Y76_Library-Management-System\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\AbdullahAl-Kheshen\\Desktop\\abdullah\\y76\\Y76_Library-Management-System\\functions\" for Cloud Functions..."}}
+[debug] [2023-05-17T01:44:49.448Z] Validating nodejs source
+[debug] [2023-05-17T01:44:54.257Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-05-17T01:44:54.257Z] Building nodejs source
+[debug] [2023-05-17T01:44:54.258Z] Failed to find version of module node: reached end of search path C:\Users\AbdullahAl-Kheshen\Desktop\abdullah\y76\Y76_Library-Management-System\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-05-17T01:44:54.264Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-05-17T01:44:54.284Z] Found firebase-functions binary at 'C:\Users\AbdullahAl-Kheshen\Desktop\abdullah\y76\Y76_Library-Management-System\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-05-17T01:44:55.439Z] Serving at port 8205
+
+[debug] [2023-05-17T01:44:55.716Z] Got response from /__/functions.yaml {"endpoints":{"publishBook":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","eventFilters":{"resource":"projects/y76-librarymanagementsystem/databases/(default)/documents/books/{status}"},"retry":false},"labels":{},"entryPoint":"publishBook"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-05-17T01:44:55.724Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: publishBook. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: publishBook."}}
+[info] i  functions[us-central1-publishBook]: function ignored because the firestore emulator does not exist or is not running. {"metadata":{"emulator":{"name":"functions"},"message":"function ignored because the firestore emulator does not exist or is not running."}}
+[debug] [2023-05-17T02:11:35.321Z] ----------------------------------------------------------------------
+[debug] [2023-05-17T02:11:35.323Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AbdullahAl-Kheshen\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-05-17T02:11:35.323Z] CLI Version:   12.0.0
+[debug] [2023-05-17T02:11:35.323Z] Platform:      win32
+[debug] [2023-05-17T02:11:35.323Z] Node Version:  v18.16.0
+[debug] [2023-05-17T02:11:35.324Z] Time:          Wed May 17 2023 05:11:35 GMT+0300 (Eastern European Summer Time)
+[debug] [2023-05-17T02:11:35.324Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-17T02:11:35.464Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-17T02:11:35.464Z] > authorizing via signed-in user (abdullah.alkheshen@gmail.com)
+[debug] [2023-05-17T02:11:35.464Z] [iam] checking project y76-librarymanagementsystem for permissions ["firebase.projects.get"]
+[debug] [2023-05-17T02:11:35.466Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions [none]
+[debug] [2023-05-17T02:11:35.466Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions x-goog-quota-user=projects/y76-librarymanagementsystem
+[debug] [2023-05-17T02:11:35.466Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-17T02:11:36.887Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions 200
+[debug] [2023-05-17T02:11:36.888Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/y76-librarymanagementsystem:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-17T02:11:36.889Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem [none]
+[debug] [2023-05-17T02:11:37.435Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem 200
+[debug] [2023-05-17T02:11:37.436Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem {"projectId":"y76-librarymanagementsystem","projectNumber":"51556035661","displayName":"y76-LibraryManagementSystem","name":"projects/y76-librarymanagementsystem","resources":{"hostingSite":"y76-librarymanagementsystem","storageBucket":"y76-librarymanagementsystem.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_ddc4c19f-2f84-49cb-8200-666c7881b91e"}
+[info] 
+[info] === Serving from 'C:\Users\AbdullahAl-Kheshen\Desktop\abdullah\y76\Y76_Library-Management-System'...
+[info] 
+[debug] [2023-05-17T02:11:37.444Z] defaultcredentials: writing to file C:\Users\AbdullahAl-Kheshen\AppData\Roaming\firebase\abdullah_alkheshen_gmail.com_application_default_credentials.json
+[debug] [2023-05-17T02:11:37.447Z] Setting GAC to C:\Users\AbdullahAl-Kheshen\AppData\Roaming\firebase\abdullah_alkheshen_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\AbdullahAl-Kheshen\\AppData\\Roaming\\firebase\\abdullah_alkheshen_gmail.com_application_default_credentials.json"}}
+[debug] [2023-05-17T02:11:37.448Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem/adminSdkConfig [none]
+[debug] [2023-05-17T02:11:38.019Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem/adminSdkConfig 200
+[debug] [2023-05-17T02:11:38.020Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/y76-librarymanagementsystem/adminSdkConfig {"projectId":"y76-librarymanagementsystem","storageBucket":"y76-librarymanagementsystem.appspot.com","locationId":"us-central"}
+[info] i  functions: Watching "C:\Users\AbdullahAl-Kheshen\Desktop\abdullah\y76\Y76_Library-Management-System\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\AbdullahAl-Kheshen\\Desktop\\abdullah\\y76\\Y76_Library-Management-System\\functions\" for Cloud Functions..."}}
+[debug] [2023-05-17T02:11:38.039Z] Validating nodejs source
