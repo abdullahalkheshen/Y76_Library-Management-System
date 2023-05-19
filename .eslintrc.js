@@ -1,5 +1,5 @@
-// .eslintrc.js example
-module.exports = {
+
+exports = {
     "env": {
         "browser": true,
         "es2021": true,
@@ -8,9 +8,5 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
-    },
-    "parser": "@eslint-parser",
-    "ecmaFeatures": {
-        "jsx": true
     }
 }
